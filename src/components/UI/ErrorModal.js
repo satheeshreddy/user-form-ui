@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { ReactDOM } from "react";
+import ReactDOM from "react-dom";
 import Button from "./Button";
 import Card from "./Card";
 import classes from "./ErrorModal.module.css";
@@ -10,7 +10,7 @@ const Backdrop = (props) => {
 
 const ModalOverlay = (props) => {
   return (
-    <Card>
+    <Card className={classes.modal}>
       <header className={classes.header}>
         <h2>{props.title}</h2>
       </header>
